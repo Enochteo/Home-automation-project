@@ -29,6 +29,7 @@ Database: SQLite or Firebase (for cloud sync)
 Other: MQTT or HTTP for device communication, Chart.js for data visualization
 
 ## Folder Structure
+<!--
 ```
 home-automation-dashboard/
 │
@@ -40,7 +41,7 @@ home-automation-dashboard/
 ├── utils/                # Automation logic and API handlers
 ├── requirements.txt      # Python dependencies
 └── README.md
-```
+```-->
 Demo and Screenshots
 Coming soon.
 
