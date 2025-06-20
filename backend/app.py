@@ -7,7 +7,7 @@ device_states = {"light": False}
 
 @app.route("/")
 def index():
-    return render_template("home.html")
+    return render_template("dashboard.html")
 
 @app.route("/update", methods=["POST"])
 def update_sensor():
@@ -25,3 +25,4 @@ def toggle_device(device):
     if device in device_states:
         device_states[device] = not device_states[device]
     return jsonify({device: device_states[device]})
+
