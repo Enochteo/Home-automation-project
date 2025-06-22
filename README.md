@@ -2,7 +2,7 @@
 A web-based dashboard designed to monitor and control smart home devices in real time. This project integrates IoT hardware with a clean user interface to provide centralized control, live sensor data, and automation features for smart environments.
 
 ## Description
-The Home Automation Dashboard connects with a microcontrollers ESP32 to control and monitor devices such as lights, fans, temperature sensors, and more. The system collects data from IoT devices, displays it in an intuitive dashboard, and allows users to trigger actions manually or automatically based on rules.
+The Home Automation Dashboard connects with a microcontroller, ESP32 to control and monitor devices such as lights, fans, temperature sensors, and more. The system collects data from IoT devices, displays it in an intuitive dashboard, and allows users to trigger actions manually or automatically based on rules.
 
 ## Features
 Real-time device status updates and control
