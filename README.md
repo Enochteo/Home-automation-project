@@ -13,7 +13,7 @@ Responsive web interface for desktop and mobile
 
 Automation logic (e.g., turn on fan when temp > 30°C)
 
-Secure user authentication (optional)
+Secure user authentication (to be added)
 
 Modular and extensible device support
 
