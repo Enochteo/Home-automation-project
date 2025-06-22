@@ -22,7 +22,7 @@ Frontend: HTML, CSS, JavaScript (optional React upgrade)
 
 Backend: Flask (Python)
 
-Microcontroller: ESP32 or Arduino with WiFi support
+Microcontroller: ESP32 WROOM Dev Board
 
 Database: SQLite or Firebase (for cloud sync)
 
