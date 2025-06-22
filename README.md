@@ -26,7 +26,7 @@ Microcontroller: ESP32 WROOM Dev Board
 
 Database: SQLite or Firebase (for cloud sync)
 
-Other: MQTT or HTTP for device communication, Chart.js for data visualization
+Other: HTTP (later MQTT) for device communication, Chart.js for data visualization
 
 ## Folder Structure
 <!--
