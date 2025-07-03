@@ -18,6 +18,7 @@ def update_sensor():
         return jsonify({"status": "success"}), 200
     else:
         return jsonify({"error": "Invalid JSON"}), 400
+    
 @app.route("/status")
 def det_status():
     return jsonify(sensor_data | device_states)
