@@ -24,7 +24,7 @@ Backend: Flask (Python)
 
 Microcontroller: ESP32 WROOM Dev Board
 
-Database: SQLite or Firebase (for cloud sync)
+Database: Firebase - for cloud sync (to be added)
 
 Other: HTTP (later MQTT) for device communication, Chart.js for data visualization
 
