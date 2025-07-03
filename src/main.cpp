@@ -7,9 +7,9 @@
 
 DHT dht(DHTPIN, DHTTYPE);
 
-const char* ssid = "Pixel_9640";
-const char* password = "140219702006..";
-const char* serverName = "http://10.51.79.155:5001/update";
+const char* ssid = "YOUR-WIFI-NAME";
+const char* password = "YOUR-WIFI-PASSWORD";
+const char* serverName = "YOUR-SERVER-IP-ADDRESS";
 
 const int ledPin = 2;
 
