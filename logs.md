@@ -4,3 +4,10 @@ Today I connected the ESP32 to send posts to the server (sensor data) and also s
 **Notes**
 - The server(my mac) ip address changes every time you restart the wifi so update the arduino code.
 - Take note of json keys and id names in the templates.
+
+**Wed. Jul 2, 2025**
+Implemented graphical sensor data display on the dashboard using Charts.js, basically linked the cdn, created the canvas in the dashboard html file and updated them with the sensor data in scripts.js using DOM manipulation.
+To implement:
+- Resting phase for webpage when ESP32 is not connected / data is not read
+- Database for data
+- any form of analytics/predictions.
