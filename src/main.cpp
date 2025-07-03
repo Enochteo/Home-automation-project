@@ -7,17 +7,21 @@
 
 DHT dht(DHTPIN, DHTTYPE);
 
-const char* ssid = "YOUR-WIFI-NAME";
-const char* password = "YOUR-WIFI-PASSWORD";
-const char* serverName = "YOUR-SERVER-IP_ADDRESS";
+const char* ssid = "Pixel_9640";
+const char* password = "140219702006..";
+const char* serverName = "http://10.51.79.155:5001/update";
 
 const int ledPin = 2;
 
 void setup() {
     Serial.begin(115200);
+    // define led pinmode
     pinMode(ledPin, OUTPUT);
 
+    // Begin temp sensor
     dht.begin();
+
+    // connect to wifi
     WiFi.begin(ssid, password);
     while (WiFi.status() != WL_CONNECTED) {
         delay(500);
@@ -31,22 +35,24 @@ void setup() {
 }
 
 void loop() {
-    // nothing for now
     if (WiFi.status() == WL_CONNECTED) {
+        // init http post for sensor data
         HTTPClient postHttp;
         postHttp.begin(serverName);
         postHttp.addHeader("Content-Type", "application/json");
 
-
+        // read sensor values
         float temperature = dht.readTemperature();
         float humidity = dht.readHumidity();
         float light = 23.0;
-    
+        
+        // sensor error
         if (isnan(temperature) || isnan(humidity)) {
             Serial.println("Sensor read failed!");
             return;
         }
-
+        
+        // sensor payload to be converted to json
         String payload = "{";
         payload += "\"temperature\": " + String(temperature, 2) + ",";
         payload += "\"humidity\": " + String(humidity, 2) + ",";
@@ -58,8 +64,10 @@ void loop() {
 
         postHttp.POST(payload);
         postHttp.end();
+
+        // init get request for device state
         HTTPClient getHttp;
-        getHttp.begin("http://10.51.79.155:5001/status");
+        getHttp.begin(serverName);
         int code = getHttp.GET();
 
         if (code == 200) {
