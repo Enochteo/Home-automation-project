@@ -11,14 +11,14 @@ Live sensor data (temperature, humidity, etc.)
 
 Responsive web interface for desktop and mobile
 
-Automation logic (e.g., turn on fan when temp > 30°C)
+Automation logic (e.g., turn lights on when dark)
 
 Secure user authentication (to be added)
 
 Modular and extensible device support
 
 ## Tech Stack
-Frontend: HTML, CSS, JavaScript (optional React upgrade)
+Frontend: HTML, CSS, JavaScript 
 
 Backend: Flask (Python)
 
