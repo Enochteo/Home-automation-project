@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Dashboard</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body class="bg-gray-100 min-h-screen p-6">
     <div class="max-w-4xl mx-auto">
@@ -36,26 +37,14 @@
         <p class="mt-2 text-sm text-gray-600">State: <span id="lightState">--</span></p>
       </div>
       
-    <script>
-        async function fetchStatus() {
-            try {
-            const res =  await fetch('/status');
-            const data = await res.json();
-            document.getElementById('temp').textContent = data.temperature
-            document.getElementById('humid').textContent = data.humidity;
-            document.getElementById('lightData').textContent = data.lightData;
-            document.getElementById('lightState').textContent = data.lightState? 'ON' : 'OFF';   
-            } catch (err){
-                console.error("Error fetching data:", err);
-            }
-        }
-        async function toggleDevice(device) {
-            await fetch(`/toggle/${device}`);
-            fetchStatus();
-        }
 
-        setInterval(fetchStatus, 2000);
-        fetchStatus();
-    </script>
+        <!--Charts-->
+        <h2>Real-time Charts</h2>
+        <canvas id="tempChart" width="400" height="150"></canvas>
+        <canvas id="humidityChart" width="400" height="150"></canvas>
+        <canvas id="lightChart" width="400" height="150"></canvas>
+
+        <script src="{{ url_for('static', filename='script.js')}}"></script>
+
 </body>
 </html>
