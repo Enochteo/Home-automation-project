@@ -11,7 +11,7 @@ Live sensor data (temperature, humidity, etc.)
 
 Responsive web interface for desktop and mobile
 
-Automation logic (e.g., turn on fan when temp > 30°C)
+AI device Automation
 
 Secure user authentication (to be added)
 
@@ -42,6 +42,8 @@ home-automation-dashboard/
 ├── requirements.txt      # Python dependencies
 └── README.md
 ```-->
+
+
 Demo and Screenshots
 Coming soon.
 
