@@ -12,6 +12,7 @@ const char* password = "YOUR-WIFI-PASSWORD";
 const char* serverName = "YOUR-SERVER-IP-ADDRESS";
 
 const int ledPin = 2;
+const int ldrPin = 36;
 
 void setup() {
     Serial.begin(115200);
@@ -44,7 +45,8 @@ void loop() {
         // read sensor values
         float temperature = dht.readTemperature();
         float humidity = dht.readHumidity();
-        float light = 23.0;
+        float light = map(analogRead(ldrPin), 0, 4095, 0, 100);
+        //float light = 23.0;
         
         // sensor error
         if (isnan(temperature) || isnan(humidity)) {
