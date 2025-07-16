@@ -44,12 +44,16 @@ home-automation-dashboard/
 ```-->
 
 
-## Why the AI device automation model?
+## Why AI device Automation
 Home automation systems must be robust, adaptive, and responsive to both extreme environmental conditions and personal user preferences. Traditional rule-based systems rely on fixed thresholds (e.g., "turn on light if light level < 300"), which fail to account for real-world complexity such as Seasonal variations in ambient lighting and humidity, Changes in user comfort over time, Dynamic conditions (e.g., cloudy days, heat waves, indoor activities), This is where machine learning provides a smarter alternative.
 
 By training a model on historical data — including temperature, humidity, and ambient light levels, along with user preferences — the system learns when to activate devices (like lights or fans) without being explicitly told. This allows it to make personalized, real-time decisions that align with the user’s habits and the environmental context.
 
 Imagine a system that automatically adjusts lighting and temperature in your home — not based on fixed thresholds, but on your past behavior, the season, time of day, and indoor conditions. That’s the kind of intelligent automation this project aims to deliver.
+
+## Demo and Screenshots
+<img width="1434" alt="Dashboard-Homepage-1" src="https://github.com/user-attachments/assets/07294daf-190c-4b3f-bcb6-6f9b8b4596c3" />
+<img width="1437" alt="Dashboard-Homepage-2" src="https://github.com/user-attachments/assets/f9631a2a-c526-4132-b93a-da2a0887d2a0" />
 
 Contributing
 Contributions and suggestions are welcome. 
