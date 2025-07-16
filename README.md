@@ -28,8 +28,8 @@ Database: SQLite or Firebase (for cloud sync)
 
 Other: HTTP (later MQTT) for device communication, Chart.js for data visualization
 
-## Folder Structure
-<!--
+<!--## Folder Structure
+
 ```
 home-automation-dashboard/
 │
