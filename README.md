@@ -5,13 +5,13 @@ A web-based dashboard designed to monitor and control smart home devices in real
 The Home Automation Dashboard connects with a microcontroller, ESP32 to control and monitor devices such as lights, fans, temperature sensors, and more. The system collects data from IoT devices, displays it in an intuitive dashboard, and allows users to trigger actions manually or automatically based on rules.
 
 ## Features
-Real-time device status updates and control
+Real-time device status updates and control.
 
 Live sensor data (temperature, humidity, etc.)
 
 Responsive web interface for desktop and mobile
 
-AI device Automation
+AI device Automation.
 
 Secure user authentication (to be added)
 
