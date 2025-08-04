@@ -38,7 +38,7 @@ home-automation-dashboard/
 ├── devices/              # ESP32/Arduino code
 ├── app.py                # Flask backend
 ├── models.py             # Data models
-├── utils/                # Automation logic and API handlers
+├── utils/                # Automation logic 
 ├── requirements.txt      # Python dependencies
 └── README.md
 ```-->
